@@ -4,3 +4,26 @@ Facelock
 A tool locking an X session if the user leaves his workplace or
 somebody looks at the screen from behind his shoulder.
 
+Prerequisites
+=============
+
+Required libraries:
+ - OpenCV
+ - HighGUI (for debugging)
+ - gnome-screen-saver
+
+Required tools:
+ - GCC
+ - SCons
+
+Compilation
+===========
+
+Two profiles are available: debug and release
+
+To compile:
+$ scons profile=${profile} where ${profile} is debug or release.
+
+Default profile is release profile.
+
+In debug profile you can see what happens on the cam.
